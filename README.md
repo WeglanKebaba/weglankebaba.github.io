@@ -1,0 +1,3 @@
+Jedyne co powiem to
+NIE KWESTIONUJ NICZEGO CO SIE ZNAJDUJE TU.
+:3
