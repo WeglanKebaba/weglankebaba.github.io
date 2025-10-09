@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function CusiekFunkcja() {
+            alert("CUSIEK ALERT");
+            document.write("Cusiek napisany za pomocą funkcji");
+        }
+        </script>
+    </head>
+    <body>
+        <font size="7"><script>
+            var cusiek1 = 20, cusiek2 = 10, a = 90, b = 300, c=a*b, d=c/a, e='cwelek', f='11', g=f+a;
+            var cusiek10 = 9010;
+            var cusiek3 = cusiek1+cusiek2;
+            document.write("Cwel" + "<br>");//Tu nie musi tekst i znacznik oddzielnie 
+            document.write("cusiek1 = " + cusiek1 + "<br>"); //dodawanie i ten plus znaczy jakby dodanie do tego ciągu wartości zmiennej aby ją wyświetlić
+            document.write("Wynik mnożenia jako zmienna c = a*b = " + c + "<br>");//można dawać znaczniki w ""
+            document.write("Wynik dzielenia jako zmienna d = c/a = " + d + "<br>");//ZAWSZE ŚREDNIK NA KOŃCU
+            document.write("Zmienna może być tekstem, e = 'cwelek', czyli " + e + "<br>")
+            document.write("A i jak sie w zmiennej wpisze liczbe w '' (np '10') to potem w obliczeniach doklei ją po prostu<br>")
+            document.write("Na przykład zmienna f = '11' i g = f+a, czyli " + g + "<br>");
+            var h = a+parseInt(f);
+            document.write("Jest to do rozwiązania za pomocą zmienna=a+parseInt(zmienna która ma liczbe w '') = " + h + "<br>")
+            document.write("Reszta z dzielenia zmiennej b na a = "+ b%a + "<br>")//Obliczenia można też dawać same nie trzeba zmiennych tworzyć specjalnych
+        </script><br>
+        <script>
+            CusiekFunkcja();
+        </script><br><br>
+        <script src="cus.js"></script>//Zawartośc pliku: document.write("Cusiek z innego pliku");
+        </font>
+    </body>
+</html>

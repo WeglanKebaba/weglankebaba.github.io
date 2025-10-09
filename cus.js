@@ -1,0 +1,1 @@
+document.write("Cusiek z innego pliku");
