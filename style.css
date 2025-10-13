@@ -1,0 +1,27 @@
+body {
+    font-family: Comic sans MS;
+    background-color: #db4ab5;
+    color: #ff89f1;
+    text-shadow: 3px 3px 3px black;
+}
+a {
+    color: #ff89f1;
+    text-shadow: 3px 3px 3px black;
+    text-decoration: underline;
+}
+
+.list-box {
+    background: linear-gradient(135deg, #d39dcfb9, #96288394);
+    border-radius: 12px;       
+    padding: 10px 40px;             
+    width: fit-content;        
+    font-size: 2em;          
+    box-shadow: 0 10px 16px rgba(0,0,0,0.1); 
+    margin: 20px auto;  
+    }
+
+.list-box ul,
+.list-box ol {
+    margin: 10px 0;            
+    padding-left: 20px;
+    }
