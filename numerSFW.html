@@ -17,7 +17,7 @@
     #content {
        padding: 2rem;
       text-align: center;
-      transition: filter 2s ease;
+      transition: filter 3s ease;
     }
 
      body.modal-active #content {
@@ -87,10 +87,29 @@
       opacity: 0.9;
       transform: scale(1.5);
     }
+
+     #flash {
+      position: fixed;
+      inset: 0;
+      background: white;
+      opacity: 0;
+      z-index: 2000;
+      pointer-events: none;
+    }
+
+    .flash-active {
+      animation: flashEffect 3s ease-out;
+    }
+
+    @keyframes flashEffect {
+      0% { opacity: 0; }
+      20% { opacity: 1; }
+      100% { opacity: 0; }
+    }
   </style>
 </head>
 <body class="modal-active">
-
+<div id="flash"></div>
   <div id="ageModal">
     <div class="modal-box">
       <h2 style="font-size: 30px;">Czy aby na pewno chcesz zobaczyć? Wchodzisz na własną odpowiedzialność.</h2>
@@ -115,8 +134,12 @@
 
   <script>
   function allowAccess() {
-      document.getElementById('ageModal').style.display = 'none';
-      document.body.classList.remove('modal-active');
+      const flash = document.getElementById('flash');
+      flash.classList.add('flash-active');
+      setTimeout(() => {
+        document.getElementById('ageModal').style.display = 'none';
+        document.body.classList.remove('modal-active');
+      }, 200);
     }
   function denyAccess() {
     window.location.href = "https://weglankebaba.github.io/index.html";
