@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon"
+    href="https://res.cloudinary.com/ddd8crevo/image/upload/v1760364982/b7cae8cd-fe61-48c6-8733-45f8892705a4.png"
+    type="image/x-icon">
+  <title>Prawdziwie niezapomniane doznania :33</title>
+  <style>
+    body {
+    font-family: Comic sans MS;
+    background-color: #db4ab5;
+    color: #ff89f1;
+    text-shadow: 3px 3px 3px black;
+}
+    #content {
+       padding: 2rem;
+      text-align: center;
+      transition: filter 2s ease;
+    }
+
+     body.modal-active #content {
+      filter: blur(40px);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    #ageModal {
+      position: fixed;
+      inset: 0;
+      background: rgba(92, 9, 74, 0.75);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal-box {
+      background: rgb(203, 42, 201);
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .modal-box h2 {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      padding: 0.6rem 1.2rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .yes {
+      background-color: #f945ff;
+      color: white;
+      font-family: Comic sans MS;
+      text-shadow: 2px 2px 2px black;
+    }
+
+    .no {
+      background-color: #2d0707;
+      color: white;
+      font-family: Comic sans MS;
+      text-shadow: 2px 2px 2px black;
+    }
+
+    img {
+        border-radius: 20px;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #ff89f1;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+<body class="modal-active">
+
+  <div id="ageModal">
+    <div class="modal-box">
+      <h2 style="font-size: 30px;">Czy aby na pewno chcesz zobaczyć? Wchodzisz na własną odpowiedzialność.</h2>
+      <button class="yes" onclick="allowAccess()"><b>Yes.</b></button>
+      <button class="no" onclick="denyAccess()"><i>Może lepiej nie..</i></button>
+    </div>
+  </div>
+
+  <div id="content">
+    <p align="center">
+            <img src="https://res.cloudinary.com/ddd8crevo/image/upload/v1761517702/eeeeee-ezgif.com-crop_bsswlw.gif" width="1300" height="700"
+        </p>
+        <h1 style="text-align:center; color: #ff89f1;"><a href="https://weglankebaba.github.io/index.html"">Jednak żałujesz wyboru?</a></h1><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p align="center">
+            <img src="https://res.cloudinary.com/ddd8crevo/image/upload/v1761517977/jajoliz_n86j67.png" width="20%" height="50%">
+        <br><a href="https://www.google.com/search?q=astolfo+femboy+r34&client=firefox-b-d&sca_esv=6e39c7eb808723cd&udm=2&biw=1707&bih=934&ei=_qH-aPveObqk1fIPmd_K4Ak&ved=0ahUKEwj71fGa9sKQAxU6UlUIHZmvEpwQ4dUDCBI&uact=5&oq=astolfo+femboy+r34&gs_lp=Egtnd3Mtd2l6LWltZyISYXN0b2xmbyBmZW1ib3kgcjM0SOsWUOUFWOkRcAF4AJABAJgBuAGgAdEGqgEDNS4zuAEDyAEA-AEBmAIAoAIAmAMAiAYBkgcAoAfoArIHALgHAMIHAMgHAA&sclient=gws-wiz-img"><span style="font-size: 50px;"> Kuszą cię takie rzeczy że nadal tu jesteś??</span></a>
+
+        
+  </div>
+
+  <script>
+  function allowAccess() {
+      document.getElementById('ageModal').style.display = 'none';
+      document.body.classList.remove('modal-active');
+    }
+  function denyAccess() {
+    window.location.href = "https://weglankebaba.github.io/index.html";
+  }
+</script>
+
+</body>
+</html>
