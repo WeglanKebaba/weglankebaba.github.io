@@ -9,6 +9,9 @@ a {
     text-shadow: 3px 3px 3px black;
     text-decoration: underline;
 }
+img {
+    border-radius: 15px;
+}
 
 .list-box {
     background: linear-gradient(135deg, #d39dcfb9, #96288394);
@@ -24,4 +27,5 @@ a {
 .list-box ol {
     margin: 10px 0;            
     padding-left: 20px;
+
     }
